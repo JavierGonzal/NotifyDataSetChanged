@@ -13,13 +13,6 @@ You can find more information **[here](http://thedeveloperworldisyours.com/andro
 --- | --- | ---
 ![transition_explode] | ![transition_slide] | ![transition_fade]
 
-# About
-  You can see differents kind of recycle view :
- + Drag and drop
- + Drag and drop in grid
- + Swipe 
- + Horizontal list
- + Expandable list
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
