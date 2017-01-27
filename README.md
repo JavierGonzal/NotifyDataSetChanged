@@ -3,8 +3,8 @@ In this repository you can find how to learn ``` notifyDataSetChanged(); ```
 
 Two example:
 ```
-Multiple choice in ListView
-Single choice in ListView
+- Multiple choice in ListView
+- Single choice in ListView
 ```
 
 You can find more information **[here](http://thedeveloperworldisyours.com/android/notifydatasetchanged/#sthash.0gtf6DnK.dpbs)**
@@ -23,11 +23,6 @@ You can find more information **[here](http://thedeveloperworldisyours.com/andro
   
   Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com)**
 ---------
-# Libraries
-
- * **[Expandable-recycler-view](https://github.com/thoughtbot/expandable-recycler-view)**
- 
- 
 
 # Requirements
 
