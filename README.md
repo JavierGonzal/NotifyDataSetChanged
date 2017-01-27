@@ -1,5 +1,8 @@
 # NotifyDataSetChanged
-How to use notifyDataSetChanged();
+In this repository you can find how to learn ```java notifyDataSetChanged(); ``` Two example
+
+Multiple choice in ListView
+Single choice in ListView
 
 You can find more information **[here](http://thedeveloperworldisyours.com/android/notifydatasetchanged/#sthash.0gtf6DnK.dpbs)**
 
@@ -75,6 +78,6 @@ License
 [fade_link]: http://thedeveloperworldisyours.com/android/notifydatasetchanged/#sthash.0gtf6DnK.dpbs
 [slide_link]: http://thedeveloperworldisyours.com/android/notifydatasetchanged/#sthash.0gtf6DnK.dpbs
 
-[transition_explode]: https://github.com/CabezasGonzalezJavier/NotifyDataSetChanged/blob/master/choice.gif.gif
+[transition_explode]: https://github.com/CabezasGonzalezJavier/NotifyDataSetChanged/blob/master/choice.gif
 [transition_slide]: https://github.com/CabezasGonzalezJavier/NotifyDataSetChanged/blob/master/multiple.gif
 [transition_fade]: https://github.com/CabezasGonzalezJavier/NotifyDataSetChanged/blob/master/single.gif
