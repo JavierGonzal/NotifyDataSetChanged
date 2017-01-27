@@ -12,7 +12,7 @@ import android.widget.TextView;
  * Created by javierg on 25/01/2017.
  */
 
-public class OnlyOneAdapter extends BaseAdapter implements SelectedIndex {
+public class SingleAdapter extends BaseAdapter implements SelectedIndex {
 
     private final Context mContext;
     private final String[] mValues;
@@ -28,7 +28,7 @@ public class OnlyOneAdapter extends BaseAdapter implements SelectedIndex {
         RadioButton mRadioButton;
     }
 
-    public OnlyOneAdapter(Context context, String[] values) {
+    public SingleAdapter(Context context, String[] values) {
         this.mContext = context;
         this.mValues = values;
     }

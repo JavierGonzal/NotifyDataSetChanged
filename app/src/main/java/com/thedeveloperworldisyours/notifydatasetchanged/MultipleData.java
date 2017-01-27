@@ -4,11 +4,11 @@ package com.thedeveloperworldisyours.notifydatasetchanged;
  * Created by javierg on 27/01/2017.
  */
 
-public class Data {
+public class MultipleData {
     private String text;
     private boolean selected;
 
-    public Data(String text, boolean selected) {
+    public MultipleData(String text, boolean selected) {
         this.text = text;
         this.selected = selected;
     }

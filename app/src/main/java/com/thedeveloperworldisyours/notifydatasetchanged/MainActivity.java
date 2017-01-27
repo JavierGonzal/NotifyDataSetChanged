@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             mFragment = new MultipleFragment();
+        getSupportActionBar().setTitle(getString(R.string.menu_main_multiple));
             addFragment();
         }
 
@@ -33,11 +34,13 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_main_multiple:
                 mFragment = MultipleFragment.newInstance();
+                getSupportActionBar().setTitle(getString(R.string.menu_main_multiple));
                 addFragment();
                 return true;
 
             case R.id.menu_main_only_one:
-                mFragment = OnlyOneFragment.newInstance();
+                mFragment = SingleFragment.newInstance();
+                getSupportActionBar().setTitle(getString(R.string.menu_main_single));
                 addFragment();
                 return true;
 

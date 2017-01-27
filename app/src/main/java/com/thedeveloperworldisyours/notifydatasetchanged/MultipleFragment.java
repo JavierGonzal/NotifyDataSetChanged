@@ -36,22 +36,22 @@ public class MultipleFragment extends Fragment implements AdapterView.OnItemClic
         View view = inflater.inflate(R.layout.fragment_multiple, container, false);
         ListView listView = (ListView) view.findViewById(R.id.fragment_multiple_list_view);
 
-        Data android = new Data("Android", false);
-        Data iPhone = new Data("iPhone", false);
-        Data windowsMobile = new Data("WindowsMobile", false);
+        MultipleData android = new MultipleData("Android", false);
+        MultipleData iPhone = new MultipleData("iPhone", false);
+        MultipleData windowsMobile = new MultipleData("WindowsMobile", false);
 
-        Data blackberry = new Data("Blackberry", false);
-        Data webOS = new Data("WebOS", false);
-        Data ubuntu = new Data("Ubuntu", false);
+        MultipleData blackberry = new MultipleData("Blackberry", false);
+        MultipleData webOS = new MultipleData("WebOS", false);
+        MultipleData ubuntu = new MultipleData("Ubuntu", false);
 
-        Data windows7 = new Data("Windows7", false);
-        Data max = new Data("Max OS X", false);
-        Data linux = new Data("Linux", false);
+        MultipleData windows7 = new MultipleData("Windows7", false);
+        MultipleData max = new MultipleData("Max OS X", false);
+        MultipleData linux = new MultipleData("Linux", false);
 
-        Data os = new Data("OS/2", false);
-        Data symbian = new Data("Symbian", false);
+        MultipleData os = new MultipleData("OS/2", false);
+        MultipleData symbian = new MultipleData("Symbian", false);
 
-        List<Data> list = new ArrayList<>();
+        List<MultipleData> list = new ArrayList<>();
         list.add(0, android);
         list.add(1, iPhone);
         list.add(2, windowsMobile);

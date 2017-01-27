@@ -9,16 +9,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 
-public class OnlyOneFragment extends Fragment implements AdapterView.OnItemClickListener {
+public class SingleFragment extends Fragment implements AdapterView.OnItemClickListener {
 
-    OnlyOneAdapter mAdapter;
+    SingleAdapter mAdapter;
 
-    public OnlyOneFragment() {
+    public SingleFragment() {
         // Required empty public constructor
     }
 
-    public static OnlyOneFragment newInstance() {
-        return new OnlyOneFragment();
+    public static SingleFragment newInstance() {
+        return new SingleFragment();
     }
 
     @Override
@@ -31,14 +31,14 @@ public class OnlyOneFragment extends Fragment implements AdapterView.OnItemClick
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view = inflater.inflate(R.layout.fragment_only_one, container, false);
+        View view = inflater.inflate(R.layout.fragment_single, container, false);
         ListView listView = (ListView) view.findViewById(R.id.fragment_only_one_list_view);
 
         String[] values = new String[]{"Android", "iPhone", "WindowsMobile",
                 "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
                 "Linux", "OS/2", "symbian"};
 
-        mAdapter = new OnlyOneAdapter(getActivity(), values);
+        mAdapter = new SingleAdapter(getActivity(), values);
         listView.setAdapter(mAdapter);
         listView.setOnItemClickListener(this);
         return view;

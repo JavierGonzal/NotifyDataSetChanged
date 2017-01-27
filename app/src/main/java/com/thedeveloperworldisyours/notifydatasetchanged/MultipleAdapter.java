@@ -17,7 +17,7 @@ import java.util.List;
 public class MultipleAdapter extends BaseAdapter implements SelectedIndex {
 
     private final Context mContext;
-    List<Data> mList;
+    List<MultipleData> mList;
 
     @Override
     public void setSelectedIndex(int position) {
@@ -34,7 +34,7 @@ public class MultipleAdapter extends BaseAdapter implements SelectedIndex {
         RadioButton mRadioButton;
     }
 
-    public MultipleAdapter(Context context, List<Data> list) {
+    public MultipleAdapter(Context context, List<MultipleData> list) {
         this.mContext = context;
         this.mList = list;
     }
