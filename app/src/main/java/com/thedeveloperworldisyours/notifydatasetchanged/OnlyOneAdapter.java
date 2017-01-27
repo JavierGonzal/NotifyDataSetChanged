@@ -1,24 +1,31 @@
 package com.thedeveloperworldisyours.notifydatasetchanged;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 /**
  * Created by javierg on 25/01/2017.
  */
 
-public class OnlyOneAdapter extends BaseAdapter implements View.OnClickListener {
+public class OnlyOneAdapter extends BaseAdapter implements SelectedIndex {
 
     private final Context mContext;
     private final String[] mValues;
+    private int mSelectedIndex = -1;
+
+    @Override
+    public void setSelectedIndex(int position) {
+        mSelectedIndex = position;
+    }
 
     static class ViewHolder {
-        Button mButton;
+        TextView mTextView;
+        RadioButton mRadioButton;
     }
 
     public OnlyOneAdapter(Context context, String[] values) {
@@ -50,34 +57,22 @@ public class OnlyOneAdapter extends BaseAdapter implements View.OnClickListener 
             rowView = inflater.inflate(R.layout.list_item, null);
 
             ViewHolder viewHolder = new ViewHolder();
-            viewHolder.mButton = (Button) rowView.findViewById(R.id.list_item_button);
-
-            viewHolder.mButton.setOnClickListener(this);
+            viewHolder.mTextView = (TextView) rowView.findViewById(R.id.list_item_text);
+            viewHolder.mRadioButton = (RadioButton) rowView.findViewById(R.id.list_item_check_button);
 
             rowView.setTag(viewHolder);
         }
 
         // fill data
         ViewHolder holder = (ViewHolder) rowView.getTag();
-        holder.mButton.setText(mValues[position]);
-
-        if (holder.mButton.getTag() != null && (holder.mButton.getTag()).equals("Info")) {
-
-            holder.mButton.setBackgroundColor(Color.BLUE);
-            holder.mButton.setTextColor(Color.WHITE);
-            holder.mButton.setTag("");
+        holder.mTextView.setText(mValues[position]);
+        if (mSelectedIndex == position) {
+            holder.mRadioButton.setChecked(true);
         } else {
-            holder.mButton.setBackgroundResource(android.R.drawable.btn_default);
-            holder.mButton.setTextColor(Color.BLACK);
+            holder.mRadioButton.setChecked(false);
         }
 
         return rowView;
     }
 
-    @Override
-    public void onClick(View v) {
-
-        v.setTag("Info");
-        this.notifyDataSetChanged();
-    }
 }

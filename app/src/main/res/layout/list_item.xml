@@ -1,11 +1,22 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="90dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:id="@+id/list_item_button"
+    <TextView
+        android:id="@+id/list_item_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="90dp"
+        android:text="@string/app_name"
+        android:layout_toLeftOf="@+id/list_item_check_button"
+        android:gravity="center"/>
 
-</LinearLayout>
+    <RadioButton
+        android:id="@+id/list_item_check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>
